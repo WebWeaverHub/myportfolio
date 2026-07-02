@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waniya Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Waniya Portfolio</h1>
+    <p>Student at Seerat Educational System School | Aspiring Web Developer</p>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="profile-container">
+      <img src="images/profile.jpg" alt="Waniya Profile Picture" class="profile-pic">
+    </div>
+    <p class="intro">I’m Waniya, a Grade 10 student passionate about technology, design, and modern web development.</p>
+    <button onclick="welcomeVisitor()">Say Hello</button>
+    <p id="welcomeMessage"></p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Driven by curiosity and creativity, I aim to build digital experiences that are both functional and elegant. My vision is to grow into a professional Web Developer who crafts modern, aesthetic solutions for the future.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Excel</div>
+      <div class="skill-card">Typing</div>
+    </div>
+    <button onclick="showBestSkill()">Highlight My Strength</button>
+    <p id="skillMessage"></p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <select id="projectSelect">
+      <option value="web">Web Design</option>
+      <option value="data">Data Work</option>
+      <option value="coding">Coding</option>
+    </select>
+    <button onclick="findProject()">View Project</button>
+    <p id="projectMessage"></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form onsubmit="return contactReply()">
+      <input type="text" id="visitorName" placeholder="Your Name">
+      <input type="email" id="visitorEmail" placeholder="Your Email">
+      <input type="text" id="visitorReason" placeholder="Reason for Contact">
+      <textarea id="visitorMessage" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+    </form>
+    <p id="contactMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Waniya | Designed with passion and precision</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
